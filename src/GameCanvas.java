@@ -14,7 +14,11 @@ public class GameCanvas extends JPanel {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        try {
+            this.char1 = ImageIO.read(new File("assets/images/players/straight/0.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //IO= in and out
         //copy relative path
         // vi neu dung copy path thi se bat dau tu o D cua may,neu cho nguoi khac choi game thi ko choi dc
@@ -24,8 +28,10 @@ public class GameCanvas extends JPanel {
         //graphic g nhu 1 cai but ve, dung method cua g de ve
 //        g.drawRect(0,0,100,200);
         g.setColor(Color.black);
-        g.fillRect(0,0,100,200);
+//        g.fillRect(0,0,100,200);
         g.drawImage(this.background, 0, 0, null);
+        //truc x roi y
+        g.drawImage(this.char1, 176, 500, null);
 
     }
 }
