@@ -6,8 +6,10 @@ import java.awt.event.WindowListener;
 
 public class GameWindow extends JFrame {
     //lay thuoc tinh Jframe - tinh ke thua
+
     GameCanvas canvas = new GameCanvas();
     public GameWindow(){
+
 //        this.setVisible(true);
         this.setResizable(false);
         //khong the nhan thu nho, tranh vo hinh anh
@@ -22,11 +24,13 @@ public class GameWindow extends JFrame {
                 System.exit(0);
             }
         });
+
     }
     public void gameLoop(){
         while(true){
             this.canvas.run();
-            this.canvas.repaint();
+//            this.canvas.repaint();
+            //ve lai moi thu tren panel
             try {
                 Thread.sleep(17);
             } catch (InterruptedException e) {
@@ -34,4 +38,5 @@ public class GameWindow extends JFrame {
             }
         }
     }
+
 }
