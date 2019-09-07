@@ -6,7 +6,7 @@ import java.awt.event.WindowListener;
 
 public class GameWindow extends JFrame {
     //lay thuoc tinh Jframe - tinh ke thua
-
+    public int cnt = 1;
     GameCanvas canvas = new GameCanvas();
     public GameWindow(){
 
@@ -29,7 +29,7 @@ public class GameWindow extends JFrame {
     public void gameLoop(){
         while(true){
             this.canvas.run();
-//            this.canvas.repaint();
+            this.canvas.repaint();
             //ve lai moi thu tren panel
             try {
                 Thread.sleep(17);

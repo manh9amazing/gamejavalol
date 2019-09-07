@@ -17,23 +17,30 @@ public class GameCanvas extends JPanel {
     int PlayerX;
     int PlayerY;
 
+    int enemyBlackX;
+    int enemyBlackY;
 
-//    int X;
-//    int Y;
+    int enemyBlueX;
+    int enemy1BLueY;
+
+    int enemyPinkX;
+    int enemyPinkY;
+
     public int scroll;
+    int Y_posi;
+    boolean end = false;
 
-    public BufferedImage buf_img;
+//    public BufferedImage buf_img;
     public GameCanvas(){
 
         try {
-//            this.background = ImageIO.read(new File("assets/images/background/0.png"));
-            this.buf_img = ImageIO.read(new File("assets/images/background/0.png"));
-            this.buf_img = buf_img.getSubimage(0,(0 + scroll),384 ,600);
+            this.background = ImageIO.read(new File("assets/images/background/0.png"));
+//            this.buf_img = ImageIO.read(new File("assets/images/background/0.png"));
+//            this.buf_img = buf_img.getSubimage(0,0 ,384 ,600);
             this.player = ImageIO.read(new File("assets/images/players/straight/0.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
         //IO= in and out
         //copy relative path
@@ -45,10 +52,7 @@ public class GameCanvas extends JPanel {
 
         this.setFocusable(true);
         //co kha nang bat su kien
-
-
         this.addKeyListener(new KeyAdapter() {
-
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_UP){
@@ -81,35 +85,41 @@ public class GameCanvas extends JPanel {
                     PlayerY = 0;
                 }
             }
-
             @Override
             public void keyReleased(KeyEvent e) {
 
             }
         });
     }
-
     @Override
     protected void paintComponent(Graphics g) {
         //graphic g nhu 1 cai but ve, dung method cua g de ve
 //        g.drawRect(0,0,100,200);
         g.setColor(Color.black);
 //        g.fillRect(0,0,100,200);
-
-        g.drawImage(this.buf_img, 0, 0, null);
+        Y_posi = -2509 + scroll;
+        this.oneRun();
+        if (end == false) {
+            g.drawImage(this.background, 0, Y_posi, null);
+        }
         //truc x roi y
         g.drawImage(this.player, this.PlayerX, this.PlayerY, null);
-
     }
-
-
-    public void getResource(){
-
+    public void oneRun(){
+        if (Y_posi>0){
+            end = true;
+        }
     }
-
+    public void infiniteRun(){
+        if (Y_posi>0){
+            scroll = 0;
+        }
+    }
     public  void  run() {
         System.out.println(scroll);
-        this.repaint();
-        scroll+=1000;
+        scroll+=10;
+    }
+    public void enemyBlueRun(){
+
     }
 }
