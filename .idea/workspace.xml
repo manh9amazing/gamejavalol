@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/KeyPressed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/GameCanvas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homework" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QSp5sHL0PUa61p0anjH4WiBg1V" />
@@ -99,7 +106,28 @@
       <option name="project" value="LOCAL" />
       <updated>1567875431832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1567917573943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567917573943</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1568033051562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568033051562</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1568033249520</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568033249520</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +150,18 @@
     <MESSAGE value="update: add gameLoop" />
     <MESSAGE value="update: add 4 dir char" />
     <MESSAGE value="update: sliding background" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: sliding background" />
+    <MESSAGE value="update: add blue and pink enemies (can flap wings)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: add blue and pink enemies (can flap wings)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GameCanvas.java</url>
+          <line>192</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

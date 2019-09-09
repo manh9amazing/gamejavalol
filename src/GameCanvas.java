@@ -46,9 +46,14 @@ public class GameCanvas extends JPanel {
 
     int cntState = 0;
 
+    int backgroundX = 0;
+    int backgroundY = -2509;
+
+   KeyPressed keyPressed ;
+
 //    public BufferedImage buf_img;
     public GameCanvas(){
-
+        this.keyPressed = new KeyPressed();
         try {
             this.background = ImageIO.read(new File("assets/images/background/0.png"));
 //            this.buf_img = ImageIO.read(new File("assets/images/background/0.png"));
@@ -83,38 +88,35 @@ public class GameCanvas extends JPanel {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_UP){
-                    PlayerY-=5;
+                    keyPressed.upPressed = true;
                 }
                 if (e.getKeyCode() == KeyEvent.VK_DOWN){
-                    PlayerY+=5;
+                   keyPressed.downPressed = true;
                 }
                 if (e.getKeyCode() == KeyEvent.VK_LEFT){
-                    PlayerX-=5;
-            }
+                    keyPressed.leftPressed = true;
+                }
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT){
-                    PlayerX+=5;
+                    keyPressed.rightPressed = true;
                 }
-                this.clampPlayer();
+
             }
 
-            public void  clampPlayer(){
 
-                if (PlayerX > 340){
-                    PlayerX = 340;
-                }
-                if (PlayerX < 0){
-                    PlayerX = 0;
-                }
-                if (PlayerY > 510){
-                    PlayerY = 510;
-                }
-                if (PlayerY < 0){
-                    PlayerY = 0;
-                }
-            }
             @Override
             public void keyReleased(KeyEvent e) {
-
+                if (e.getKeyCode() == KeyEvent.VK_UP){
+                    keyPressed.upPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_DOWN){
+                    keyPressed.downPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_LEFT){
+                    keyPressed.leftPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_RIGHT){
+                    keyPressed.rightPressed = false;
+                }
             }
         });
     }
@@ -126,9 +128,9 @@ public class GameCanvas extends JPanel {
 //        g.fillRect(0,0,100,200);
         Y_posi = -2509 + scroll;
         this.infiniteRun();
-        if (end == false) {
-            g.drawImage(this.background, 0, Y_posi, null);
-        }
+
+        g.drawImage(this.background, this.backgroundX, this.backgroundY, null);
+
         //truc x roi y
         g.drawImage(this.player, PlayerX, PlayerY, null);
 
@@ -139,7 +141,21 @@ public class GameCanvas extends JPanel {
         g.drawImage(pinkState, enemyPinkX, enemyPinkY, null);
 
     }
+    public void  clampPlayer(){
 
+        if (PlayerX > 340){
+            PlayerX = 340;
+        }
+        if (PlayerX < 0){
+            PlayerX = 0;
+        }
+        if (PlayerY > 510){
+            PlayerY = 510;
+        }
+        if (PlayerY < 0){
+            PlayerY = 0;
+        }
+    }
     public void oneRun(){
         if (Y_posi>0){
             end = true;
@@ -153,14 +169,28 @@ public class GameCanvas extends JPanel {
 
     public  void  run() {
 //        System.out.println(scroll);
-        scroll+=10;
+        this.backgroundY ++;
         cntState+=1;
-        this.stateClamp();
-        System.out.println(cntState);
+        if (this.backgroundY > 0 ){
+            this.backgroundY = -2509;
+        }
+        if (keyPressed.upPressed){
+            this.PlayerY -=5;
+        }
+        if (keyPressed.downPressed){
+            this.PlayerY +=5;
+        }
+        if (keyPressed.rightPressed){
+            this.PlayerX +=5;
+        }
+        if (keyPressed.leftPressed){
+            this.PlayerX -=5;
+        }
+        this.clampPlayer();
     }
 
     public void stateClamp(){
-        if (cntState>15){
+        if (cntState>150){
             cntState = 0;
         }
     }
@@ -275,5 +305,4 @@ public class GameCanvas extends JPanel {
             pinkState = pinkState3;
         }
     }
-
 }
