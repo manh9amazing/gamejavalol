@@ -99,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567875431832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1567917573943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567917573943</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +129,18 @@
     <MESSAGE value="update: add gameLoop" />
     <MESSAGE value="update: add 4 dir char" />
     <MESSAGE value="update: sliding background" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: sliding background" />
+    <MESSAGE value="update: add blue and pink enemies (can flap wings)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: add blue and pink enemies (can flap wings)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GameCanvas.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

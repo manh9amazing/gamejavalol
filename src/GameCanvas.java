@@ -160,7 +160,7 @@ public class GameCanvas extends JPanel {
     }
 
     public void stateClamp(){
-        if (cntState>15){
+        if (cntState>150){
             cntState = 0;
         }
     }
@@ -265,13 +265,13 @@ public class GameCanvas extends JPanel {
         if (cntState ==0){
             pinkState = pinkState0;
         }
-        if (cntState ==5){
+        if (cntState ==50){
             pinkState = pinkState1;
         }
-        if (cntState ==10){
+        if (cntState ==100){
             pinkState = pinkState2;
         }
-        if (cntState ==15){
+        if (cntState ==150){
             pinkState = pinkState3;
         }
     }
