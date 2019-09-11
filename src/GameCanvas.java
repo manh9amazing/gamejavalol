@@ -11,8 +11,9 @@ import java.io.IOException;
 import java.util.Random;
 
 public class GameCanvas extends JPanel {
-
-    Image background;
+    Background background;
+    // de y xem co import nham file cua  java ko
+    Player player;
     Image blueState;
     Image pinkState;
 
@@ -26,10 +27,8 @@ public class GameCanvas extends JPanel {
     Image pinkState2;
     Image pinkState3;
 
-    Image player;
 
-    int PlayerX;
-    int PlayerY;
+
 
     int enemyBlackX;
     int enemyBlackY;
@@ -46,14 +45,21 @@ public class GameCanvas extends JPanel {
 
     int cntState = 0;
 
-//    public BufferedImage buf_img;
-    public GameCanvas(){
 
+
+//   c1:KeyPressed keyPressed ;
+
+    //    public BufferedImage buf_img;
+    public GameCanvas(){
+//        c1: this.keyPressed = new KeyPressed();
+        this.background = new Background();
+        this.player = new Player();
+        //C2: player.keyPressed = this.keyPressed;
         try {
-            this.background = ImageIO.read(new File("assets/images/background/0.png"));
+
 //            this.buf_img = ImageIO.read(new File("assets/images/background/0.png"));
 //            this.buf_img = buf_img.getSubimage(0,0 ,384 ,600);
-            this.player = ImageIO.read(new File("assets/images/players/straight/0.png"));
+
 
             this.blueState0 = ImageIO.read(new File("assets/images/enemies/level0/blue/0.png"));
             this.blueState1 = ImageIO.read(new File("assets/images/enemies/level0/blue/1.png"));
@@ -73,51 +79,51 @@ public class GameCanvas extends JPanel {
         //copy relative path
         // vi neu dung copy path thi se bat dau tu o D cua may,neu cho nguoi khac choi game thi ko choi dc
         //bat su kien bam phim
+        this.KeyListener();
 
-        this.PlayerX = 200;
-        this.PlayerY = 200;
 
+    }
+
+    private void KeyListener() {
         this.setFocusable(true);
         //co kha nang bat su kien
         this.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_UP){
-                    PlayerY-=5;
+                    KeyPressed.getInstance().upPressed = true;
                 }
                 if (e.getKeyCode() == KeyEvent.VK_DOWN){
-                    PlayerY+=5;
+                    KeyPressed.getInstance().downPressed = true;
                 }
                 if (e.getKeyCode() == KeyEvent.VK_LEFT){
-                    PlayerX-=5;
-            }
+                    KeyPressed.getInstance().leftPressed = true;
+                }
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT){
-                    PlayerX+=5;
+                    KeyPressed.getInstance().rightPressed = true;
                 }
-                this.clampPlayer();
+
             }
 
-            public void  clampPlayer(){
 
-                if (PlayerX > 340){
-                    PlayerX = 340;
-                }
-                if (PlayerX < 0){
-                    PlayerX = 0;
-                }
-                if (PlayerY > 510){
-                    PlayerY = 510;
-                }
-                if (PlayerY < 0){
-                    PlayerY = 0;
-                }
-            }
             @Override
             public void keyReleased(KeyEvent e) {
-
+                if (e.getKeyCode() == KeyEvent.VK_UP){
+                    KeyPressed.getInstance().upPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_DOWN){
+                    KeyPressed.getInstance().downPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_LEFT){
+                    KeyPressed.getInstance().leftPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_RIGHT){
+                    KeyPressed.getInstance().rightPressed = false;
+                }
             }
         });
     }
+
     @Override
     protected void paintComponent(Graphics g) {
         //graphic g nhu 1 cai but ve, dung method cua g de ve
@@ -126,11 +132,11 @@ public class GameCanvas extends JPanel {
 //        g.fillRect(0,0,100,200);
         Y_posi = -2509 + scroll;
         this.infiniteRun();
-        if (end == false) {
-            g.drawImage(this.background, 0, Y_posi, null);
-        }
+        this.background.render(g);
+        this.player.render(g);
+
         //truc x roi y
-        g.drawImage(this.player, PlayerX, PlayerY, null);
+
 
         this.enemyBlueRun();
         g.drawImage(blueState, enemyBlueX, enemyBlueY, null);
@@ -139,7 +145,9 @@ public class GameCanvas extends JPanel {
         g.drawImage(pinkState, enemyPinkX, enemyPinkY, null);
 
     }
+    public void  clampPlayer(){
 
+    }
     public void oneRun(){
         if (Y_posi>0){
             end = true;
@@ -150,13 +158,11 @@ public class GameCanvas extends JPanel {
             scroll = 0;
         }
     }
-
     public  void  run() {
 //        System.out.println(scroll);
-        scroll+=10;
-        cntState+=1;
-        this.stateClamp();
-        System.out.println(cntState);
+        this.background.run();
+//       c1:this.player.run(this.keyPressed);
+        this.player.run();
     }
 
     public void stateClamp(){
@@ -265,15 +271,14 @@ public class GameCanvas extends JPanel {
         if (cntState ==0){
             pinkState = pinkState0;
         }
-        if (cntState ==50){
+        if (cntState ==5){
             pinkState = pinkState1;
         }
-        if (cntState ==100){
+        if (cntState ==10){
             pinkState = pinkState2;
         }
-        if (cntState ==150){
+        if (cntState ==15){
             pinkState = pinkState3;
         }
     }
-
 }
