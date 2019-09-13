@@ -1,8 +1,8 @@
 import java.awt.*;
 
 public class PlayerSpell {
-    int x = 200;
-    int y = 200;
+    int x ;
+    int y ;
     Image image;
 
     public PlayerSpell(){
@@ -14,6 +14,6 @@ public class PlayerSpell {
         g.drawImage(this.image, x, y, null);
     }
     public void run(){
-        this.y --;
+        this.y -=5;
     }
 }

@@ -15,16 +15,14 @@ public class GameCanvas extends JPanel {
     // de y xem co import nham file cua  java ko
     Player player;
     Enemy enemy;
-    PlayerSpell playerSpell;
+
 
 
     public GameCanvas(){
         this.enemy = new Enemy();
         this.background = new Background();
         this.player = new Player();
-        this.playerSpell = new PlayerSpell();
-        this.playerSpell.x = this.player.x;
-        this.playerSpell.y = this.player.y;
+
 
         this.KeyListener();
 
@@ -47,7 +45,9 @@ public class GameCanvas extends JPanel {
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT){
                     KeyPressed.getInstance().rightPressed = true;
                 }
-
+                if (e.getKeyCode() == KeyEvent.VK_SPACE){
+                    KeyPressed.getInstance().shootPressed= true;
+                }
             }
 
             @Override
@@ -64,6 +64,9 @@ public class GameCanvas extends JPanel {
                 if (e.getKeyCode() == KeyEvent.VK_RIGHT){
                     KeyPressed.getInstance().rightPressed = false;
                 }
+                if (e.getKeyCode() == KeyEvent.VK_SPACE){
+                    KeyPressed.getInstance().shootPressed = false;
+                }
             }
         });
     }
@@ -72,13 +75,11 @@ public class GameCanvas extends JPanel {
         g.setColor(Color.black);
         this.background.render(g);
         this.player.render(g);
-        this.playerSpell.render(g);
         this.enemy.render(g);
     }
     public  void  run() {
        this.background.run();
        this.player.run();
        this.enemy.run();
-       this.playerSpell.run();
     }
 }

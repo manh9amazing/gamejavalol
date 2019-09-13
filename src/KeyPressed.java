@@ -5,6 +5,7 @@ public class KeyPressed {
     boolean downPressed;
     boolean rightPressed;
     boolean leftPressed;
+    boolean shootPressed;
     private static final KeyPressed INSTANCE = new KeyPressed();
 
     private KeyPressed(){
@@ -13,6 +14,7 @@ public class KeyPressed {
         this.downPressed = false;
         this.rightPressed = false;
         this.leftPressed = false;
+        this.shootPressed = false;
     }
 
     public static KeyPressed getInstance(){
