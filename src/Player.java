@@ -11,7 +11,7 @@ public class Player {
 
     public Player(){
        this.image = SpriteUltis.loadImage("assets/images/players/straight/0.png");
-        this.x = 200;
+       this.x = 200;
        this.y = 200;
     }
 
@@ -32,20 +32,10 @@ public class Player {
         if (KeyPressed.getInstance().leftPressed){
             this.x -=5;
         }
-        this.clamp();
+        this.x = Ultis.clamp(this.x,0,340);
+        this.y = Ultis.clamp(this.y,0,510);
     }
-    public void clamp(){
-        if (this.x > 340){
-            this.x  = 340;
-        }
-        if (this.x < 0){
-            this.x = 0;
-        }
-        if (this.y > 510){
-            this.y = 510;
-        }
-        if (this.y< 0){
-            this.y = 0;
-        }
-    }
+
+
+
 }
