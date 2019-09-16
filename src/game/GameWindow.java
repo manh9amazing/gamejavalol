@@ -1,5 +1,6 @@
 package game;
 
+import bases.GameObject;
 import game.GameCanvas;
 
 import javax.swing.*;
@@ -30,7 +31,7 @@ public class GameWindow extends JFrame {
     }
     public void gameLoop(){
         while(true){
-            this.canvas.run();
+            GameObject.runALL();
             this.canvas.repaint();
             //ve lai moi thu tren panel
             try {

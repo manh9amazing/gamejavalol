@@ -1,9 +1,10 @@
 package game;
 
+import bases.GameObject;
 import bases.KeyPressed;
-import entity.Background;
-import entity.Enemy;
-import entity.Player;
+import entities.Background;
+import entities.Enemy;
+import entities.Player;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,8 +23,6 @@ public class GameCanvas extends JPanel {
         this.enemy = new Enemy();
         this.background = new Background();
         this.player = new Player();
-
-
         this.KeyListener();
 
     }
@@ -73,13 +72,6 @@ public class GameCanvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         g.setColor(Color.black);
-        this.background.render(g);
-        this.player.render(g);
-        this.enemy.render(g);
-    }
-    public  void  run() {
-       this.background.run();
-       this.player.run();
-       this.enemy.run();
+        GameObject.renderALL(g);
     }
 }

@@ -1,20 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="update: refractor package">
+      <change afterPath="$PROJECT_DIR$/assets/images/background/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/cyan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/bullets/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion-big/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/explosion/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/black/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/blue/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/enemies/level0/pink/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/enemy-banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/numbers/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/power.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/hud/ring.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/items/power-up-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/items/power-up-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/quit-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/quit-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/start-color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/menus/start-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/player-spells/a/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/explosions/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/left/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/right/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/players/straight/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/game-over-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/thanks-for-playing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/victory-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/scenes/victory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere-spells/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/sphere/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/ending.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/game-over.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/bgm/title.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion-big.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/item-collect.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/ok.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/option.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/player-dead.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/player-shoot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/music/sfx/powerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/META-INF/CI-game.iml.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/KeyPressed.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/SpriteUltis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Ultis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Vector2D.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Background.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameWindow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyPressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/KeyPressed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/PlayerSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpriteUltis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/SpriteUltis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ultis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Ultis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +184,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.BoxCollider">
+    <configuration name="BoxCollider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bases.BoxCollider" />
+      <module name="CI-game.iml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="CI-game.iml" />
@@ -78,6 +221,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoxCollider" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Vector2D" />
         <item itemvalue="Application.Test" />
@@ -194,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568638203775</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update: refractor package">
+      <created>1568639782758</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1568639782758</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +374,21 @@
     <MESSAGE value="update: limit playerSpell" />
     <MESSAGE value="update: vector 2D (home attempt)" />
     <MESSAGE value="update: add vector 2D class" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: add vector 2D class" />
+    <MESSAGE value="update: refractor package" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: refractor package" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/bases/BoxCollider.java</url>
+          <line>25</line>
+          <properties class="bases.BoxCollider" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

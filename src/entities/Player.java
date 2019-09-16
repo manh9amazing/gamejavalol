@@ -1,16 +1,12 @@
-package entity;
+package entities;
 
-import bases.KeyPressed;
-import bases.SpriteUltis;
-import bases.Ultis;
-import bases.Vector2D;
+import bases.*;
 
 import java.awt.*;
 import java.util.ArrayList;
 
-public class Player {
-    Vector2D position;
-    Image image;
+public class Player extends GameObject {
+    //gameobject(this)--> this se chi vao player va add vao Game object
     int coolDown = 50;
 //    bases.Vector2D position = new Vector(0,0);
     ArrayList<PlayerSpell> PlayerSpells;
@@ -24,14 +20,6 @@ public class Player {
 
     }
 
-    public void render(Graphics g) {
-        g.drawImage(this.image, (int) this.position.x, (int) this.position.y, null);
-        //chay tung spell
-        for (int i = 0; i < this.PlayerSpells.size(); i++){
-            PlayerSpell playerSpell = this.PlayerSpells.get(i);
-            playerSpell.render(g);
-        }
-    }
 
     public void run() {
         if (KeyPressed.getInstance().upPressed){
@@ -54,10 +42,6 @@ public class Player {
             coolDown++;}
         this.position.x = Ultis.clamp( this.position.x,0,340);
         this.position.y = Ultis.clamp( this.position.y,0,510);
-        for (int i = 0; i < this.PlayerSpells.size(); i++){
-            PlayerSpell playerSpell = this.PlayerSpells.get(i);
-            playerSpell.run();
-        }
 
     }
 
@@ -71,7 +55,6 @@ public class Player {
         PlayerSpell newSpell = new PlayerSpell();
         newSpell.position.x = (int) this.position.x;
         newSpell.position.y = (int) this.position.y;
-        PlayerSpells.add(newSpell);
     }
 
 
