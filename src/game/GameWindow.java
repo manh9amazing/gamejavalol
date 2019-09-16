@@ -1,8 +1,10 @@
+package game;
+
+import game.GameCanvas;
+
 import javax.swing.*;
-import javax.swing.event.SwingPropertyChangeSupport;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class GameWindow extends JFrame {
     //lay thuoc tinh Jframe - tinh ke thua

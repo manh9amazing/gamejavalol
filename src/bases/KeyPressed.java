@@ -1,11 +1,11 @@
-import java.security.Key;
+package bases;
 
 public class KeyPressed {
-    boolean upPressed;
-    boolean downPressed;
-    boolean rightPressed;
-    boolean leftPressed;
-    boolean shootPressed;
+    public boolean upPressed;
+    public boolean downPressed;
+    public boolean rightPressed;
+    public boolean leftPressed;
+    public boolean shootPressed;
     private static final KeyPressed INSTANCE = new KeyPressed();
 
     private KeyPressed(){

@@ -1,6 +1,8 @@
+package bases;
+
 public class Vector2D {
-    float x;
-    float y;
+    public float x;
+    public float y;
 
     public Vector2D(){
         this.x = 0;
@@ -50,9 +52,13 @@ public class Vector2D {
         return new Vector2D(this.x/this.length(), this.y/this.length());
     }
 
+    /**
+     * hien ra dap an theo string
+     * @return
+     */
     @Override
     public String toString() {
-        return "Vector2D{" +
+        return "bases.Vector2D{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';

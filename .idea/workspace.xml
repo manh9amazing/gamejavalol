@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyPressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/KeyPressed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpriteUltis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/SpriteUltis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ultis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Ultis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Vector2D">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
       <module name="CI-game.iml" />
@@ -59,7 +70,7 @@
       </method>
     </configuration>
     <configuration name="Vector2D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Vector2D" />
+      <option name="MAIN_CLASS_NAME" value="bases.Vector2D" />
       <module name="CI-game.iml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Vector2D" />
         <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Vector2D" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Program" />
       </list>
@@ -176,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568456641937</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update: add vector 2D class">
+      <created>1568638203775</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568638203775</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +222,7 @@
     <MESSAGE value="update: Add Enemy and PlayerSpell" />
     <MESSAGE value="update: limit playerSpell" />
     <MESSAGE value="update: vector 2D (home attempt)" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: vector 2D (home attempt)" />
+    <MESSAGE value="update: add vector 2D class" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: add vector 2D class" />
   </component>
 </project>

@@ -1,19 +1,22 @@
+package entity;
+
+import bases.SpriteUltis;
+import bases.Vector2D;
+
 import java.awt.*;
 
 public class PlayerSpell {
-    int x ;
-    int y ;
+    Vector2D position;
     Image image;
 
     public PlayerSpell(){
         this.image = SpriteUltis.loadImage("assets/images/player-spells/a/1.png");
-        this.x = x;
-        this.y = y;
+        this.position = new Vector2D();
     }
     public void render(Graphics g) {
-        g.drawImage(this.image, x, y, null);
+        g.drawImage(this.image,(int) this.position.x, (int) this.position.y, null);
     }
     public void run(){
-        this.y -=5;
+        this.position.y -=5;
     }
 }

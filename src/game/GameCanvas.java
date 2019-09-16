@@ -1,14 +1,14 @@
-import javax.imageio.ImageIO;
+package game;
+
+import bases.KeyPressed;
+import entity.Background;
+import entity.Enemy;
+import entity.Player;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.font.ImageGraphicAttribute;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
 
 public class GameCanvas extends JPanel {
     Background background;

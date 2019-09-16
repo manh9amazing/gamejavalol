@@ -1,3 +1,5 @@
+package bases;
+
 public class Ultis {
 
     /**
@@ -7,7 +9,7 @@ public class Ultis {
      * @param max
      * @return
      */
-    public static int clamp(int value, int min, int max) {
+    public static float clamp(float value, float min,float max) {
         //von da tu tao 1 khoang bo nho trong may
         if (value < min){
             return min;
