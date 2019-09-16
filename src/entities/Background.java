@@ -1,14 +1,14 @@
 package entities;
 
 import bases.GameObject;
-import bases.SpriteUltis;
+import bases.SpriteUtils;
 import bases.Vector2D;
 
 import java.awt.*;
 public class Background extends GameObject {
 
     public Background(){
-        this.image = SpriteUltis.loadImage("assets/images/background/0.png");
+        this.image = SpriteUtils.loadImage("assets/images/background/0.png");
         this.position = new Vector2D(0, 600-3109);
         //ko can khai bao do da co o game object neu ghi lai thi tuong duong viec ghi de
     }

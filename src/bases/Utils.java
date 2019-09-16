@@ -1,6 +1,6 @@
 package bases;
 
-public class Ultis {
+public class Utils {
 
     /**
      * gioi han player

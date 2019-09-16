@@ -2,7 +2,6 @@ package entities;
 
 import bases.*;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 public class Player extends GameObject {
@@ -14,7 +13,7 @@ public class Player extends GameObject {
 //C2: Keypressed keyPressed;
 
     public Player(){
-       this.image = SpriteUltis.loadImage("assets/images/players/straight/0.png");
+       this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
        this.position = new Vector2D(200,200);
        this.PlayerSpells = new ArrayList<>();
 
@@ -40,8 +39,8 @@ public class Player extends GameObject {
         }
         else{
             coolDown++;}
-        this.position.x = Ultis.clamp( this.position.x,0,340);
-        this.position.y = Ultis.clamp( this.position.y,0,510);
+        this.position.x = Utils.clamp( this.position.x,0,340);
+        this.position.y = Utils.clamp( this.position.y,0,510);
 
     }
 
