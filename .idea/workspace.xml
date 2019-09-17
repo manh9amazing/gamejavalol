@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/SpriteUltis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Ultis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/SpriteUltis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/SpriteUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/Ultis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
-    </list>
+    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568645165988</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update: fix name">
+      <created>1568648066904</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1568648066904</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +246,8 @@
     <MESSAGE value="update: add vector 2D class" />
     <MESSAGE value="update: refractor package" />
     <MESSAGE value="update: add boxCollider" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: add boxCollider" />
+    <MESSAGE value="update: fix name" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: fix name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
