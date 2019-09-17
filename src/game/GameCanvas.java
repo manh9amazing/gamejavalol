@@ -20,8 +20,8 @@ public class GameCanvas extends JPanel {
 
 
     public GameCanvas(){
-        this.enemy = new Enemy();
         this.background = new Background();
+        this.enemy = new Enemy();
         this.player = new Player();
         this.KeyListener();
 
