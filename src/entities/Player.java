@@ -8,14 +8,14 @@ public class Player extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
     int coolDown = 50;
 //    bases.Vector2D position = new Vector(0,0);
-    ArrayList<PlayerSpell> PlayerSpells;
+//    ArrayList<PlayerSpell> PlayerSpells;
 
 //C2: Keypressed keyPressed;
 
     public Player(){
        this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
        this.position = new Vector2D(200,200);
-       this.PlayerSpells = new ArrayList<>();
+//       this.PlayerSpells = new ArrayList<>();
 
     }
 
@@ -38,9 +38,10 @@ public class Player extends GameObject {
             coolDown = 0;
         }
         else{
-            coolDown++;}
-        this.position.x = Utils.clamp( this.position.x,0,340);
-        this.position.y = Utils.clamp( this.position.y,0,510);
+            coolDown++;
+        }
+        this.position.x = Utils.clamp(this.position.x,0,340);
+        this.position.y = Utils.clamp(this.position.y,0,510);
 
     }
 
