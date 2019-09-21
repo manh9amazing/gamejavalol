@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public class Player extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
-    int coolDown = 50;
+    int count = 50;
+    FrameCounter frameCounter;
 //    bases.Vector2D position = new Vector(0,0);
 //    ArrayList<PlayerSpell> PlayerSpells;
-
 //C2: Keypressed keyPressed;
-
     public Player(){
        this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
        this.position = new Vector2D(200,200);
 //       this.PlayerSpells = new ArrayList<>();
-
+        this.boxCollider = new BoxCollider(this, 32, 48);
+        frameCounter = new FrameCounter(20);
     }
 
 
@@ -33,12 +33,12 @@ public class Player extends GameObject {
         if (KeyPressed.getInstance().leftPressed){
             this.position.x -=5;
         }
-        if (KeyPressed.getInstance().shootPressed && coolDown >20){
+        if (KeyPressed.getInstance().shootPressed && frameCounter.expired){
             this.castSpell();
-            coolDown = 0;
+            frameCounter.reset();
         }
         else{
-            coolDown++;
+            frameCounter.run();
         }
         this.position.x = Utils.clamp(this.position.x,0,340);
         this.position.y = Utils.clamp(this.position.y,0,510);
@@ -52,7 +52,7 @@ public class Player extends GameObject {
      */
 
     private void castSpell() {
-        PlayerSpell newSpell = new PlayerSpell();
+        PlayerSpell newSpell = GameObject.recycle(PlayerSpell.class);
         newSpell.position.x = (int) this.position.x;
         newSpell.position.y = (int) this.position.y;
     }

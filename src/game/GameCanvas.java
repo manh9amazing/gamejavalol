@@ -4,6 +4,7 @@ import bases.GameObject;
 import bases.KeyPressed;
 import entities.Background;
 import entities.Enemy;
+import entities.EnemySpawner;
 import entities.Player;
 
 import javax.swing.*;
@@ -16,13 +17,14 @@ public class GameCanvas extends JPanel {
     // de y xem co import nham file cua  java ko
     Player player;
     Enemy enemy;
-
+    EnemySpawner enemySpawner;
 
 
     public GameCanvas(){
         this.background = new Background();
         this.enemy = new Enemy();
         this.player = new Player();
+        enemySpawner = new EnemySpawner();
         this.KeyListener();
 
     }

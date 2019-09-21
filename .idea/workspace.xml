@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/FrameCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpawner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EnemySpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568739248102</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)">
+      <created>1568797196758</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1568797196758</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,20 +286,7 @@
     <MESSAGE value="update: add boxCollider" />
     <MESSAGE value="update: fix name" />
     <MESSAGE value="update: fix enemy animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: fix enemy animation" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/bases/BoxCollider.java</url>
-          <line>25</line>
-          <properties class="bases.BoxCollider" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
   </component>
 </project>

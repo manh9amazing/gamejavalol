@@ -4,8 +4,9 @@ public class BoxCollider {
     Vector2D position;
     float width, height;
 
-    public BoxCollider(Vector2D position, float width, float height) {
-        this.position = position;
+    public BoxCollider(GameObject master, float width, float height) {
+        //lay thong tin cua phan tu chua boxCollider
+        this.position = master.position;
         this.width = width;
         this.height = height;
     }
@@ -23,11 +24,6 @@ public class BoxCollider {
         return this.position.x + this.width;
     }
 
-    public static void main(String[] args) {
-        BoxCollider box1 = new BoxCollider(new Vector2D(0,0),5,5);
-        BoxCollider box2 = new BoxCollider(new Vector2D(1,1),5,5);
-        System.out.println(box1.collideWith(box2));
-    }
     //ToDo: can lam gi
     public boolean collideWith(BoxCollider other){
         return  this.right() >= other.left()&&
