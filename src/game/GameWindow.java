@@ -1,8 +1,11 @@
+package game;
+
+import bases.GameObject;
+import game.GameCanvas;
+
 import javax.swing.*;
-import javax.swing.event.SwingPropertyChangeSupport;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class GameWindow extends JFrame {
     //lay thuoc tinh Jframe - tinh ke thua
@@ -28,7 +31,7 @@ public class GameWindow extends JFrame {
     }
     public void gameLoop(){
         while(true){
-            this.canvas.run();
+            GameObject.runALL();
             this.canvas.repaint();
             //ve lai moi thu tren panel
             try {

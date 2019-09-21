@@ -1,79 +1,79 @@
-import javax.imageio.ImageIO;
+package game;
+
+import bases.GameObject;
+import bases.KeyPressed;
+import entities.Background;
+import entities.Enemy;
+import entities.EnemySpawner;
+import entities.Player;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.font.ImageGraphicAttribute;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import java.util.Random;
 
 public class GameCanvas extends JPanel {
     Background background;
+    // de y xem co import nham file cua  java ko
     Player player;
-    EnemyBlue enemyBlue;
-    EnemyPink enemyPink;
+    Enemy enemy;
+    EnemySpawner enemySpawner;
 
-    public GameCanvas() {
+
+    public GameCanvas(){
         this.background = new Background();
+        this.enemy = new Enemy();
         this.player = new Player();
-        this.enemyBlue = new EnemyBlue();
-        this.enemyPink = new EnemyPink();
+        enemySpawner = new EnemySpawner();
         this.KeyListener();
-    }
 
+    }
     private void KeyListener() {
         this.setFocusable(true);
+        //co kha nang bat su kien
         this.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_UP) {
+                if (e.getKeyCode() == KeyEvent.VK_UP){
                     KeyPressed.getInstance().upPressed = true;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+                if (e.getKeyCode() == KeyEvent.VK_DOWN){
                     KeyPressed.getInstance().downPressed = true;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+                if (e.getKeyCode() == KeyEvent.VK_LEFT){
                     KeyPressed.getInstance().leftPressed = true;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+                if (e.getKeyCode() == KeyEvent.VK_RIGHT){
                     KeyPressed.getInstance().rightPressed = true;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_SPACE){
+                    KeyPressed.getInstance().shootPressed= true;
                 }
             }
 
             @Override
             public void keyReleased(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_UP) {
+                if (e.getKeyCode() == KeyEvent.VK_UP){
                     KeyPressed.getInstance().upPressed = false;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+                if (e.getKeyCode() == KeyEvent.VK_DOWN){
                     KeyPressed.getInstance().downPressed = false;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+                if (e.getKeyCode() == KeyEvent.VK_LEFT){
                     KeyPressed.getInstance().leftPressed = false;
                 }
-                if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+                if (e.getKeyCode() == KeyEvent.VK_RIGHT){
                     KeyPressed.getInstance().rightPressed = false;
+                }
+                if (e.getKeyCode() == KeyEvent.VK_SPACE){
+                    KeyPressed.getInstance().shootPressed = false;
                 }
             }
         });
     }
-
     @Override
     protected void paintComponent(Graphics g) {
         g.setColor(Color.black);
-        this.background.render(g);
-        this.player.render(g);
-        this.enemyBlue.render(g);
-        this.enemyPink.render(g);
-    }
-
-    public void run() {
-        this.background.run();
-        this.player.run();
-        this.enemyBlue.run();
-        this.enemyPink.run();
+        GameObject.renderALL(g);
     }
 }

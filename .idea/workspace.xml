@@ -1,8 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78f29511-b55f-4e88-8f3c-440a36b446f4" name="Default Changelist" comment="">
+    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/FrameCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpawner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyBlue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyBlue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyPink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyPink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnemyBlue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyBlue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnemyPink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyPink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyPressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/KeyPressed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpriteUltis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/SpriteUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,9 +40,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1QgXltJxVyZJIzlgFIpTuq41RAE" />
+  <component name="ProjectId" id="1QSp5sHL0PUa61p0anjH4WiBg1V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
@@ -36,9 +64,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="BoxCollider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bases.BoxCollider" />
+      <module name="CI-game.iml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Program" />
+      <module name="CI-game.iml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="CI-game.iml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vector2D" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bases.Vector2D" />
       <module name="CI-game.iml" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -47,6 +102,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Program" />
+        <item itemvalue="Application.Program" />
+        <item itemvalue="Application.BoxCollider" />
+        <item itemvalue="Application.Vector2D" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -55,20 +114,160 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="78f29511-b55f-4e88-8f3c-440a36b446f4" name="Default Changelist" comment="" />
-      <created>1568193367011</created>
+      <changelist id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="" />
+      <created>1567773671050</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568193367011</updated>
+      <updated>1567773671050</updated>
     </task>
-    <task id="LOCAL-00001" summary="update: add enemy class and reduce lag of enemy movement">
-      <created>1568197263307</created>
+    <task id="LOCAL-00001" summary="update: load background image">
+      <created>1567777995536</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1568197263307</updated>
+      <updated>1567777995536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update: add character image">
+      <created>1567778438238</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567778438238</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update: add gameLoop">
+      <created>1567781532547</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567781532547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update: add 4 dir char">
+      <created>1567866029798</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567866029798</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update: sliding background">
+      <created>1567875431832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567875431832</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1567917573943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1567917573943</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1568033051562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568033051562</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update: add blue and pink enemies (can flap wings)">
+      <created>1568033249520</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568033249520</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update: reduce lag">
+      <created>1568036124267</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568036124267</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update: reduce lag">
+      <created>1568036516111</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568036516111</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update: Add Enemy and PlayerSpell">
+      <created>1568382061377</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568382061377</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update: limit playerSpell">
+      <created>1568386264059</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568386264059</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update: vector 2D (home attempt)">
+      <created>1568456641936</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568456641937</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update: add vector 2D class">
+      <created>1568638203775</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1568638203775</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update: refractor package">
+      <created>1568639782758</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1568639782758</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update: add boxCollider">
+      <created>1568645165988</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1568645165988</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update: fix name">
+      <created>1568648066904</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1568648066904</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update: fix name">
+      <created>1568738779044</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1568738779044</updated>
+    </task>
+    <task id="LOCAL-00019" summary="update: fix enemy animation">
+      <created>1568739248102</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568739248102</updated>
+    </task>
+    <task id="LOCAL-00020" summary="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)">
+      <created>1568797196758</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1568797196758</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update: fix error (cant shoot enemy)">
+      <created>1569074804593</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1569074804593</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,8 +284,25 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update: add enemy class and reduce lag of enemy movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: add enemy class and reduce lag of enemy movement" />
+    <MESSAGE value="update: load background image" />
+    <MESSAGE value="update: add character image" />
+    <MESSAGE value="update: fps" />
+    <MESSAGE value="update: add gameLoop" />
+    <MESSAGE value="update: add 4 dir char" />
+    <MESSAGE value="update: sliding background" />
+    <MESSAGE value="update: add blue and pink enemies (can flap wings)" />
+    <MESSAGE value="update: reduce lag" />
+    <MESSAGE value="update: Add Enemy and PlayerSpell" />
+    <MESSAGE value="update: limit playerSpell" />
+    <MESSAGE value="update: vector 2D (home attempt)" />
+    <MESSAGE value="update: add vector 2D class" />
+    <MESSAGE value="update: refractor package" />
+    <MESSAGE value="update: add boxCollider" />
+    <MESSAGE value="update: fix name" />
+    <MESSAGE value="update: fix enemy animation" />
+    <MESSAGE value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
+    <MESSAGE value="update: fix error (cant shoot enemy)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: fix error (cant shoot enemy)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

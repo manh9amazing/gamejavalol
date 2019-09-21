@@ -1,9 +1,11 @@
+package bases;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-public class SpriteUltis {
+public class SpriteUtils {
     /**
      * load image
      * @param url

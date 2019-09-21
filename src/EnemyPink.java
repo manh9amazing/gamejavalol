@@ -1,6 +1,6 @@
-import javax.imageio.ImageIO;
+import bases.SpriteUtils;
+
 import java.awt.*;
-import java.io.File;
 import java.util.Random;
 
 public class EnemyPink {
@@ -19,10 +19,10 @@ public class EnemyPink {
     int cntState = 0;
 
     public EnemyPink(){
-        this.state0 = SpriteUltis.loadImage("assets/images/enemies/level0/pink/0.png");
-        this.state1 = SpriteUltis.loadImage("assets/images/enemies/level0/pink/1.png");
-        this.state2 = SpriteUltis.loadImage("assets/images/enemies/level0/pink/2.png");
-        this.state3 = SpriteUltis.loadImage("assets/images/enemies/level0/pink/3.png");
+        this.state0 = SpriteUtils.loadImage("assets/images/enemies/level0/pink/0.png");
+        this.state1 = SpriteUtils.loadImage("assets/images/enemies/level0/pink/1.png");
+        this.state2 = SpriteUtils.loadImage("assets/images/enemies/level0/pink/2.png");
+        this.state3 = SpriteUtils.loadImage("assets/images/enemies/level0/pink/3.png");
     }
     public void render(Graphics g) {
         g.drawImage(this.state, x, y, null);
