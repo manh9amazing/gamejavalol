@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bases/FrameCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bases/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpawner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyBlue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyBlue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyPink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyPink.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnemyBlue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyBlue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnemyPink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyPink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyPressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/KeyPressed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpriteUltis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/SpriteUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.GFG">
     <configuration name="BoxCollider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bases.BoxCollider" />
       <module name="CI-game.iml" />
@@ -74,6 +53,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GFG" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GFG" />
+      <module name="CI-game.iml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GFG" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.BoxCollider" />
         <item itemvalue="Application.Vector2D" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569074804593</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update: add resetPositionForEnemy to fix errors shooting enemy">
+      <created>1569075920814</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1569075920815</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +295,8 @@
     <MESSAGE value="update: fix enemy animation" />
     <MESSAGE value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
     <MESSAGE value="update: fix error (cant shoot enemy)" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: fix error (cant shoot enemy)" />
+    <MESSAGE value="update: add resetPositionForEnemy to fix errors shooting enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: add resetPositionForEnemy to fix errors shooting enemy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
