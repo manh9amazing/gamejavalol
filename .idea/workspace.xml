@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="update: interface ex">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569075920815</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update: interface ex">
+      <created>1569078647373</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1569078647374</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,7 +302,8 @@
     <MESSAGE value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
     <MESSAGE value="update: fix error (cant shoot enemy)" />
     <MESSAGE value="update: add resetPositionForEnemy to fix errors shooting enemy" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: add resetPositionForEnemy to fix errors shooting enemy" />
+    <MESSAGE value="update: interface ex" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: interface ex" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
