@@ -1,15 +1,16 @@
-package entities;
+package entities.enemy;
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.ImageRenderer;
 
 public class Enemy extends GameObject {
     int isShooting = 0;
     int spellNum = 3;
 
     public Enemy(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/level0/blue/0.png");
+        this.renderer = new ImageRenderer("assets/images/enemies/level0/blue/0.png");
         this.position = new Vector2D((float) Math.random()*384, 0);
         this.boxCollider = new BoxCollider(this,28,28);
         //neu thay master: this --> this.position thi box se ko thay doi vi tri do qua moi lan run position se ko doi

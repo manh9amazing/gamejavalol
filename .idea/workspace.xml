@@ -2,21 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bases/FrameCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/EnemySpawner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Vector2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/PlayerSpell.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/EnemySpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemySpawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemySpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -95,9 +98,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Program" />
-        <item itemvalue="Application.BoxCollider" />
         <item itemvalue="Application.Vector2D" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.BoxCollider" />
         <item itemvalue="Application.Program" />
       </list>
     </recent_temporary>

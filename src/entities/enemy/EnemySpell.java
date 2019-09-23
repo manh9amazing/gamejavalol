@@ -1,15 +1,17 @@
-package entities;
+package entities.enemy;
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import entities.player.Player;
+import renderer.ImageRenderer;
 
 public class EnemySpell extends GameObject {
     int spellDist = 2;
     double createAngle;
 
     public EnemySpell (){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/bullets/blue.png");
+        this.renderer = new ImageRenderer("assets/images/enemies/bullets/blue.png");
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(this, 16,16);
     }
@@ -34,4 +36,8 @@ public class EnemySpell extends GameObject {
         }
     }
 
+    @Override
+    public void reset() {
+        super.reset();
+    }
 }

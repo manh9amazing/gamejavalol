@@ -1,16 +1,18 @@
-package entities;
+package entities.player;
 
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import entities.enemy.Enemy;
+import renderer.ImageRenderer;
 
 import java.awt.*;
 
 public class PlayerSpell extends GameObject {
 
     public PlayerSpell(){
-        this.image = SpriteUtils.loadImage("assets/images/player-spells/a/1.png");
+        this.renderer = new ImageRenderer("assets/images/player-spells/a/1.png");
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(this, 24,24);
     }

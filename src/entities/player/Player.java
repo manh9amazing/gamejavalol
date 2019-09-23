@@ -1,8 +1,7 @@
-package entities;
+package entities.player;
 
 import bases.*;
-
-import java.util.ArrayList;
+import renderer.ImageRenderer;
 
 public class Player extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
@@ -12,26 +11,32 @@ public class Player extends GameObject {
 //    ArrayList<PlayerSpell> PlayerSpells;
 //C2: Keypressed keyPressed;
     public Player(){
-       this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
+       this.renderer = new ImageRenderer("assets/images/players/straight/0.png");
        this.position = new Vector2D(200,200);
 //       this.PlayerSpells = new ArrayList<>();
         this.boxCollider = new BoxCollider(this, 32, 48);
         frameCounter = new FrameCounter(20);
+        this.velocity.set(0,0);
     }
 
 
     public void run() {
+        float vx=0 , vy=0;
         if (KeyPressed.getInstance().upPressed){
-            this.position.y -=5;
+            vy-=5;
+//            this.position.y-=5;
         }
         if (KeyPressed.getInstance().downPressed){
-            this.position.y +=5;
+            vy+=5;
+//            this.position.y+=5;
         }
         if (KeyPressed.getInstance().rightPressed){
-            this.position.x +=5;
+            vx+=5;
+//            this.position.x+=5;
         }
         if (KeyPressed.getInstance().leftPressed){
-            this.position.x -=5;
+            vx-=5;
+//            this.position.x-=5;
         }
         if (KeyPressed.getInstance().shootPressed && frameCounter.expired){
             this.castSpell();
@@ -42,6 +47,10 @@ public class Player extends GameObject {
         }
         this.position.x = Utils.clamp(this.position.x,0,340);
         this.position.y = Utils.clamp(this.position.y,0,510);
+
+        this.velocity.set(vx,vy);
+        super.run();
+
 
     }
 

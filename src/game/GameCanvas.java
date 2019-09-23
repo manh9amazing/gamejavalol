@@ -3,9 +3,9 @@ package game;
 import bases.GameObject;
 import bases.KeyPressed;
 import entities.Background;
-import entities.Enemy;
-import entities.EnemySpawner;
-import entities.Player;
+import entities.enemy.Enemy;
+import entities.enemy.EnemySpawner;
+import entities.player.Player;
 
 import javax.swing.*;
 import java.awt.*;
