@@ -3,9 +3,13 @@ package game;
 import bases.GameObject;
 import bases.KeyPressed;
 import entities.Background;
-import entities.Enemy;
-import entities.EnemySpawner;
-import entities.Player;
+import entities.enemy.Enemy;
+import entities.enemy.EnemyBoss;
+import entities.enemy.EnemySpawner;
+import entities.enemy.EnemyTwo;
+import entities.player.Player;
+import entities.player.SphereOne;
+import entities.player.SphereTwo;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,13 +21,21 @@ public class GameCanvas extends JPanel {
     // de y xem co import nham file cua  java ko
     Player player;
     Enemy enemy;
+    EnemyTwo enemyTwo;
+    EnemyBoss enemyBoss;
     EnemySpawner enemySpawner;
+    SphereOne sphereOne;
+    SphereTwo sphereTwo;
 
 
     public GameCanvas(){
         this.background = new Background();
         this.enemy = new Enemy();
+        this.enemyTwo = new EnemyTwo();
+        this.enemyBoss = new EnemyBoss();
         this.player = new Player();
+        this.sphereOne = new SphereOne();
+        this.sphereTwo = new SphereTwo();
         enemySpawner = new EnemySpawner();
         this.KeyListener();
 

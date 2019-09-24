@@ -69,4 +69,13 @@ public class Vector2D {
         v1.add(1,1);
         System.out.println(v1.toString());
     }
+
+    public void set(float v, float i) {
+        this.x = v;
+        this.y = i;
+    }
+
+    public void set(Vector2D other) {
+        this.set(other.x, other.y);
+    }
 }

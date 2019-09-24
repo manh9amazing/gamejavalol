@@ -2,7 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="update: interface ex">
+      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyBossSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyExplosion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyTwoSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/player/SphereOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/player/SphereOneSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/player/SphereTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/player/SphereTwoSpell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyBlue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/EnemyPink.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnemyBlue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnemyPink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyBoss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemySpawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemySpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,9 +35,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../CI-game.iml\exportToHTML" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GFG">
+  <component name="RunManager" selected="Application.Program">
     <configuration name="BoxCollider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bases.BoxCollider" />
       <module name="CI-game.iml" />
@@ -86,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GFG" />
         <item itemvalue="Application.Program" />
+        <item itemvalue="Application.GFG" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.BoxCollider" />
         <item itemvalue="Application.Vector2D" />

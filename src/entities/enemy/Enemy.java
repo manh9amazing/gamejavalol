@@ -1,21 +1,23 @@
-package entities;
+package entities.enemy;
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.Animation;
+import renderer.ImageRenderer;
 
 public class Enemy extends GameObject {
     int isShooting = 0;
     int spellNum = 3;
 
     public Enemy(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/level0/blue/0.png");
+        this.renderer = new Animation(10, false,
+                SpriteUtils.loadImage("assets/images/enemies/level0/blue/0.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/blue/1.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/blue/2.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/blue/3.png"));
         this.position = new Vector2D((float) Math.random()*384, 0);
-        this.boxCollider = new BoxCollider(this,28,28);
-        //neu thay master: this --> this.position thi box se ko thay doi vi tri do qua moi lan run position se ko doi
-        //boxCollider da lay thong tin cua enemy ke ca position
-        //math.random() tao ra so ngau nhien tu 0.0-->1.0
-        //be gay duong dan (spell) vi vua ban dan vua tien ve phia truoc
+        this.boxCollider = new BoxCollider(this,32,32);
     }
     public void run() {
         this.deActiveIfNeeded();
@@ -28,7 +30,7 @@ public class Enemy extends GameObject {
             isShooting++;
         }
     }
-    private void castSpell() {
+    public void castSpell() {
         for (int i = 0 ; i < spellNum  ; i++){
             double tempAng = (180 / (spellNum-1)) * i;
             double radConvert = Math.toRadians(tempAng);
@@ -45,4 +47,10 @@ public class Enemy extends GameObject {
         }
     }
 
+    @Override
+    public void deActive() {
+        super.deActive();
+        EnemyExplosion enemyExplosion = GameObject.recycle(EnemyExplosion.class);
+        enemyExplosion.position.set(this.position);
+    }
 }

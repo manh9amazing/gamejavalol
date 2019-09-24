@@ -1,7 +1,7 @@
 package bases;
 
-import entities.Enemy;
-import entities.Player;
+import entities.enemy.EnemyBoss;
+import renderer.Renderer;
 
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
@@ -55,6 +55,7 @@ public class GameObject {
         E gameObject = GameObject.findInactive(cls);
         if (gameObject != null){
             gameObject.reset();
+            System.out.println("recycle");
 //                System.out.println("hoi sinh"+ gameObject.getClass());
             return (E) gameObject;
         }
@@ -70,7 +71,6 @@ public class GameObject {
 
     }
 
-
     private static <E extends GameObject> E findInactive(Class<E> cls) {
         for (int i = 0 ; i < gameObjects.size(); i++){
             GameObject gameObject = gameObjects.get(i);
@@ -83,20 +83,27 @@ public class GameObject {
         return null;
     }
 
-    public Image image;
+    public Renderer renderer;
     public Vector2D position;
+    public Vector2D velocity;
     public BoxCollider boxCollider;
     public boolean isActive;
+
 
     public GameObject(){
         GameObject.add(this);
         this.position = new Vector2D(0,0);
+        this.velocity = new Vector2D(0,0);
         this.isActive = true;
     }
     public void render(Graphics g) {
-        g.drawImage(this.image, (int) this.position.x, (int) this.position.y, null);
+        if (renderer != null){
+            renderer.render(g,this.position);
+        }
     }
     public void run(){
+        this.position.addUp(this.velocity);
+        this.velocity.set(0,0);
     }
 
     public void deActive(){
@@ -108,9 +115,5 @@ public class GameObject {
         //va reset HP neu co
     }
 
-    public void resetPositionForEnemy(){
-        this.position.x = (float) (Math.random()*384);
-        this.position.y = 0;
-    }
 
 }
