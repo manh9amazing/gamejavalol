@@ -74,4 +74,8 @@ public class Vector2D {
         this.x = v;
         this.y = i;
     }
+
+    public void set(Vector2D other) {
+        this.set(other.x, other.y);
+    }
 }

@@ -114,6 +114,5 @@ public class GameObject {
         //va reset HP neu co
     }
 
-
 }
 

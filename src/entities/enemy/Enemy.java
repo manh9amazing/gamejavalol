@@ -46,4 +46,10 @@ public class Enemy extends GameObject {
         }
     }
 
+    @Override
+    public void deActive() {
+        super.deActive();
+        EnemyExplosion enemyExplosion = GameObject.recycle(EnemyExplosion.class);
+        enemyExplosion.position.set(this.position);
+    }
 }

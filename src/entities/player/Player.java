@@ -1,7 +1,10 @@
 package entities.player;
 
 import bases.*;
+import renderer.Animation;
 import renderer.ImageRenderer;
+
+import javax.lang.model.element.AnnotationMirror;
 
 public class Player extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
@@ -11,7 +14,12 @@ public class Player extends GameObject {
 //    ArrayList<PlayerSpell> PlayerSpells;
 //C2: Keypressed keyPressed;
     public Player(){
-       this.renderer = new ImageRenderer("assets/images/players/straight/0.png");
+       this.renderer = new Animation(10,
+               SpriteUtils.loadImage("assets/images/players/straight/0.png"),
+               SpriteUtils.loadImage("assets/images/players/straight/1.png"),
+               SpriteUtils.loadImage("assets/images/players/straight/2.png"),
+               SpriteUtils.loadImage("assets/images/players/straight/3.png"),
+               SpriteUtils.loadImage("assets/images/players/straight/4.png"));
        this.position = new Vector2D(200,200);
 //       this.PlayerSpells = new ArrayList<>();
         this.boxCollider = new BoxCollider(this, 32, 48);
