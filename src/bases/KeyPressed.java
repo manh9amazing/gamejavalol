@@ -7,6 +7,13 @@ public class KeyPressed {
     public boolean leftPressed;
     public boolean shootPressed;
     private static final KeyPressed INSTANCE = new KeyPressed();
+    public boolean anyKeyPressed;
+    public boolean wPressed;
+    public boolean aPressed;
+    public boolean sPressed;
+    public boolean dPressed;
+    public boolean enterPressed;
+
 
     private KeyPressed(){
         //chi co the khoi tao o day
@@ -15,6 +22,12 @@ public class KeyPressed {
         this.rightPressed = false;
         this.leftPressed = false;
         this.shootPressed = false;
+        this.anyKeyPressed = false;
+        this.aPressed = false;
+        this.wPressed = false;
+        this.dPressed = false;
+        this.sPressed = false;
+        this.enterPressed = false;
     }
 
     public static KeyPressed getInstance(){

@@ -19,7 +19,8 @@ public class PlayerSpell extends GameObject {
                 SpriteUtils.loadImage("assets/images/player-spells/a/2.png"),
                 SpriteUtils.loadImage("assets/images/player-spells/a/3.png"));
         this.position = new Vector2D();
-        this.boxCollider = new BoxCollider(this, 24,24);
+        this.velocity.set(0, -10);
+        this.boxCollider = new BoxCollider(this, 24, 24);
     }
 
     @Override
@@ -29,7 +30,6 @@ public class PlayerSpell extends GameObject {
 
     public void run(){
         this.deActiveIfNeeded();
-        this.position.y -=5;
         Enemy enemy = GameObject.checkCollider(this, Enemy.class);
         if (enemy != null ){
 //            System.out.println("dang va cham");
@@ -40,7 +40,7 @@ public class PlayerSpell extends GameObject {
         else{
 //            System.out.println("ko phat hien");
         }
-
+        super.run();
     }
     public void deActiveIfNeeded(){
         if (this.position.y >600 | this.position.y<0 | this.position.x <0 | this.position.x>384){

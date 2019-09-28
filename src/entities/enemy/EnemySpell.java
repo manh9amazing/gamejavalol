@@ -23,7 +23,8 @@ public class EnemySpell extends GameObject {
         Player player = GameObject.checkCollider(this, Player.class);
         if (player != null ){
             System.out.println("dang chet");
-//            player.deActive();
+            player.deActive();
+
             //enemy.getHit--> deactive de dung cho enemy co mau
             this.deActive();
         }

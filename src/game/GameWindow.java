@@ -16,7 +16,7 @@ public class GameWindow extends JFrame {
 //        this.setVisible(true);
         this.setResizable(false);
         //khong the nhan thu nho, tranh vo hinh anh
-        this.setSize(384,600);
+        this.setSize(700,600);
 
         this.setContentPane(this.canvas);
         this.setVisible(true);

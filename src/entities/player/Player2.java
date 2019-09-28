@@ -8,21 +8,21 @@ import scene.gameOverScene.GameOverScene;
 
 import javax.lang.model.element.AnnotationMirror;
 
-public class Player extends GameObject {
+public class Player2 extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
     int count = 50;
     FrameCounter frameCounter;
-//    bases.Vector2D position = new Vector(0,0);
+    //    bases.Vector2D position = new Vector(0,0);
 //    ArrayList<PlayerSpell> PlayerSpells;
 //C2: Keypressed keyPressed;
-    public Player(){
-       this.renderer = new Animation(10,
-               SpriteUtils.loadImage("assets/images/players/straight/0.png"),
-               SpriteUtils.loadImage("assets/images/players/straight/1.png"),
-               SpriteUtils.loadImage("assets/images/players/straight/2.png"),
-               SpriteUtils.loadImage("assets/images/players/straight/3.png"),
-               SpriteUtils.loadImage("assets/images/players/straight/4.png"));
-       this.position = new Vector2D(200,200);
+    public Player2(){
+        this.renderer = new Animation(10,
+                SpriteUtils.loadImage("assets/images/players/straight/0.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/1.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/2.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/3.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/4.png"));
+        this.position = new Vector2D(100,100);
 //       this.PlayerSpells = new ArrayList<>();
         this.boxCollider = new BoxCollider(this, 32, 48);
         frameCounter = new FrameCounter(20);
@@ -32,23 +32,23 @@ public class Player extends GameObject {
 
     public void run() {
         float vx=0 , vy=0;
-        if (KeyPressed.getInstance().upPressed){
+        if (KeyPressed.getInstance().wPressed){
             vy-=5;
 //            this.position.y-=5;
         }
-        if (KeyPressed.getInstance().downPressed){
+        if (KeyPressed.getInstance().sPressed){
             vy+=5;
 //            this.position.y+=5;
         }
-        if (KeyPressed.getInstance().rightPressed){
+        if (KeyPressed.getInstance().dPressed){
             vx+=5;
 //            this.position.x+=5;
         }
-        if (KeyPressed.getInstance().leftPressed){
+        if (KeyPressed.getInstance().aPressed){
             vx-=5;
 //            this.position.x-=5;
         }
-        if (KeyPressed.getInstance().shootPressed && frameCounter.expired){
+        if (KeyPressed.getInstance().enterPressed && frameCounter.expired){
             this.castSpell();
             frameCounter.reset();
         }
