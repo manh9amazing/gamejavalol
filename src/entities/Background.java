@@ -11,6 +11,7 @@ public class Background extends GameObject {
     public Background(){
         this.renderer = new ImageRenderer("assets/images/background/0.png");
         this.position = new Vector2D(0, 600-3109);
+        this.anchor.set(0,0);
         //ko can khai bao do da co o game object neu ghi lai thi tuong duong viec ghi de
     }
 

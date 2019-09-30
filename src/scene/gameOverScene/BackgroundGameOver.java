@@ -12,6 +12,7 @@ import scene.welcomeScene.GameWelcomeScene;
 public class BackgroundGameOver extends GameObject {
     public BackgroundGameOver(){
         this.renderer = new ImageRenderer("assets/images/scenes/game-over-background.jpg");
+        this.anchor.set(0,0);
     }
 
     @Override

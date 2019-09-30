@@ -2,6 +2,7 @@ package bases;
 
 public class BoxCollider {
     Vector2D position;
+    Vector2D anchor;
     float width, height;
 
     public BoxCollider(GameObject master, float width, float height) {
@@ -9,19 +10,20 @@ public class BoxCollider {
         this.position = master.position;
         this.width = width;
         this.height = height;
+        this.anchor = master.anchor;
     }
 
     public float top(){
-        return this.position.y;
+        return this.position.y - this.anchor.y*this.height;
     }
     public float bot(){
-        return this.position.y + this.height;
+        return this.top() + this.height;
     }
     public float left(){
-        return this.position.x;
+        return this.position.x -this.anchor.y*this.width;
     }
     public float right(){
-        return this.position.x + this.width;
+        return this.left() + this.width;
     }
 
     //ToDo: can lam gi

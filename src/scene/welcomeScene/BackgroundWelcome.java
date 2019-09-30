@@ -10,7 +10,9 @@ import scene.SceneManager;
 public class BackgroundWelcome extends GameObject {
 
     public BackgroundWelcome(){
+
         this.renderer = new ImageRenderer("assets/images/scenes/menu.png");
+        this.anchor.set(0,0);
     }
 
     @Override

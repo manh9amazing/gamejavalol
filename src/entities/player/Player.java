@@ -7,6 +7,7 @@ import scene.SceneManager;
 import scene.gameOverScene.GameOverScene;
 
 import javax.lang.model.element.AnnotationMirror;
+import java.awt.*;
 
 public class Player extends GameObject {
     //gameobject(this)--> this se chi vao player va add vao Game object
@@ -27,8 +28,14 @@ public class Player extends GameObject {
         this.boxCollider = new BoxCollider(this, 32, 48);
         frameCounter = new FrameCounter(20);
         this.velocity.set(0,0);
+        this.HP = 25;
     }
 
+    @Override
+    public void render(Graphics g) {
+        super.render(g);
+        g.drawString(Integer.toString(HP),400,250);
+    }
 
     public void run() {
         float vx=0 , vy=0;
@@ -39,14 +46,29 @@ public class Player extends GameObject {
         if (KeyPressed.getInstance().downPressed){
             vy+=5;
 //            this.position.y+=5;
+
         }
         if (KeyPressed.getInstance().rightPressed){
             vx+=5;
 //            this.position.x+=5;
+            this.renderer = new Animation(10,
+                    SpriteUtils.loadImage("assets/images/players/right/0.png"),
+                    SpriteUtils.loadImage("assets/images/players/right/1.png"),
+                    SpriteUtils.loadImage("assets/images/players/right/2.png"),
+                    SpriteUtils.loadImage("assets/images/players/right/3.png"),
+                    SpriteUtils.loadImage("assets/images/players/right/4.png"),
+                    SpriteUtils.loadImage("assets/images/players/right/5.png"));
         }
         if (KeyPressed.getInstance().leftPressed){
             vx-=5;
 //            this.position.x-=5;
+            this.renderer = new Animation(10,
+                    SpriteUtils.loadImage("assets/images/players/left/0.png"),
+                    SpriteUtils.loadImage("assets/images/players/left/1.png"),
+                    SpriteUtils.loadImage("assets/images/players/left/2.png"),
+                    SpriteUtils.loadImage("assets/images/players/left/3.png"),
+                    SpriteUtils.loadImage("assets/images/players/left/4.png"),
+                    SpriteUtils.loadImage("assets/images/players/left/5.png"));
         }
         if (KeyPressed.getInstance().shootPressed && frameCounter.expired){
             this.castSpell();
@@ -59,8 +81,10 @@ public class Player extends GameObject {
         this.position.y = Utils.clamp(this.position.y,0,510);
         this.velocity.set(vx,vy);
         super.run();
-
-
+//        this.Poisoned();
+        this.Healing(20);
+//        this.Healing(20, true);
+        this.Healing(40);
     }
 
     /**

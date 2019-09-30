@@ -2,6 +2,7 @@ package game;
 
 import bases.GameObject;
 import bases.KeyPressed;
+import entities.player.Player;
 import scene.GamePlayScene;
 import scene.SceneManager;
 import scene.welcomeScene.GameWelcomeScene;
@@ -97,11 +98,12 @@ public class GameCanvas extends JPanel {
     }
     @Override
     protected void paintComponent(Graphics g) {
+        int prtHP;
         g.setColor(Color.white);
         g.fillRect(0,0,700,600);
         g.setColor(Color.black);
-        g.drawString("dwsdasdasd",400,200);
         GameObject.renderALL(g);
-        g.drawString("dwsdasdasd",400,200);
+
+
     }
 }

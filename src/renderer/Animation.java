@@ -1,6 +1,7 @@
 package renderer;
 
 import bases.FrameCounter;
+import bases.GameObject;
 import bases.Vector2D;
 
 import java.awt.*;
@@ -31,8 +32,8 @@ public class Animation implements Renderer {
     }
 
     @Override
-    public void render(Graphics g, Vector2D position) {
-        this.renderCurrentImage(g, position);
+    public void render(Graphics g, GameObject master) {
+        this.renderCurrentImage(g, master);
         this.changeCurrentImage();
     }
 
@@ -56,9 +57,12 @@ public class Animation implements Renderer {
 
     }
 
-    private void renderCurrentImage(Graphics g, Vector2D position) {
+    private void renderCurrentImage(Graphics g, GameObject master) {
         Image currentImage = images.get(imageIndex);
-        g.drawImage(currentImage, (int) position.x, (int) position.y, null);
+        g.drawImage(currentImage,
+                (int) (master.position.x- master.anchor.x*currentImage.getWidth(null)),
+                (int) (master.position.y-master.anchor.y*currentImage.getHeight(null)),
+                null);
     }
 
     public void reset(){

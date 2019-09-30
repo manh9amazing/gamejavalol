@@ -1,5 +1,6 @@
 package bases;
 
+import entities.player.Player;
 import renderer.Renderer;
 
 import java.awt.*;
@@ -7,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 //add la bc staging cua git
-public class GameObject {
+public class GameObject extends  Buff{
     private static ArrayList<GameObject> gameObjects= new ArrayList<>();
 
     public static void add(GameObject gameObject){
@@ -35,6 +36,7 @@ public class GameObject {
         }
         System.out.println(gameObjects.size());
     }
+
 
 
     //Generics
@@ -85,26 +87,42 @@ public class GameObject {
         return null;
     }
 
-    public Renderer renderer;
-    public Vector2D position;
-    public Vector2D velocity;
-    public BoxCollider boxCollider;
-    public boolean isActive;
+    public static <E extends GameObject> E findObject(Class<E>cls){
+        for (int i = 0 ; i < gameObjects.size(); i++){
+            GameObject gameObject = gameObjects.get(i);
+            if (gameObject.isActive){
+                return (E) gameObject;
+            }
+        }
+        return null;
+    }
 
+//    public Renderer renderer;
+//    public Vector2D position;
+//    public Vector2D velocity;
+//    public BoxCollider boxCollider;
+//    public boolean isActive;
+    public Vector2D anchor;
 
     public GameObject(){
         GameObject.add(this);
         this.position = new Vector2D(0,0);
         this.velocity = new Vector2D(0,0);
+        this.anchor = new Vector2D(0.5f,0.5f);
+        //0.5f cast kieu ve float, 0.5 la double;
         this.isActive = true;
+        String s = 5 +"";
+        //cast so 5 ve string
     }
 
 
 
     public void render(Graphics g) {
+        int prtHP;
         if (renderer != null){
-            renderer.render(g,this.position);
+            renderer.render(g,this);
             g.drawString("dwsdasdasd",400,200);
+
         }
     }
     public void run(){

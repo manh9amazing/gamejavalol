@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/enemy/EnemyExplosion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
+    <list default="true" id="c9b42d40-d707-4bb7-a753-7c229c08ba73" name="Default Changelist" comment="update: add Renderer">
+      <change afterPath="$PROJECT_DIR$/src/bases/Buff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/Vector2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/bases/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/entities/Background.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game.iml/game/GameCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/enemy/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/enemy/EnemySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemy/EnemySpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/gameOverScene/BackgroundGameOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/gameOverScene/BackgroundGameOver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/welcomeScene/BackgroundWelcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/welcomeScene/BackgroundWelcome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CI-game.iml" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -254,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569247413996</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update: test">
+      <created>1569650233275</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1569650233275</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +307,7 @@
     <MESSAGE value="update: fix enemy animation" />
     <MESSAGE value="update: add enemySpell (featuring optional number of spells and distance covered each time shooting)" />
     <MESSAGE value="update: add Renderer" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: add Renderer" />
+    <MESSAGE value="update: test" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: test" />
   </component>
 </project>
